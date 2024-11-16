@@ -13,7 +13,7 @@ import org.openjdk.jmh.runner.options.OptionsBuilder;
 
 @BenchmarkMode(Mode.Throughput)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
-@Measurement(iterations = 20)
+@Measurement(iterations = 5)
 public class HashingMurmurBenchmark {
 
     @State(Scope.Thread)
@@ -28,6 +28,16 @@ public class HashingMurmurBenchmark {
     @Benchmark
     public void  hashWithMurmur2(MyStringState state, Blackhole bh){
         bh.consume(MurmurHash2.hash32(state.targetString));
+    }
+
+    @Benchmark
+    public void  longHashWithMurmur2(MyStringState state, Blackhole bh){
+        bh.consume(MurmurHash2.hash64(state.targetString));
+    }
+
+    @Benchmark
+    public void  longHashWithMurmur3(MyStringState state, Blackhole bh){
+        bh.consume(MurmurHash3.hash64(state.targetString.getBytes()));
     }
 
     @Benchmark
