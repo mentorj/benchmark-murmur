@@ -1,0 +1,27 @@
+
+Benchmark                                                       Mode  Cnt      Score     Error   Units
+HashingMurmurBenchmark.hashWithMurmur2                         thrpt    5  24739,059 ± 783,682  ops/ms
+HashingMurmurBenchmark.hashWithMurmur2:gc.alloc.rate           thrpt    5   1026,550 ±  17,150  MB/sec
+HashingMurmurBenchmark.hashWithMurmur2:gc.alloc.rate.norm      thrpt    5    120,000 ±   0,001    B/op
+HashingMurmurBenchmark.hashWithMurmur2:gc.count                thrpt    5    150,000            counts
+HashingMurmurBenchmark.hashWithMurmur2:gc.time                 thrpt    5    116,000                ms
+HashingMurmurBenchmark.hashWithMurmur3                         thrpt    5  23386,743 ± 441,172  ops/ms
+HashingMurmurBenchmark.hashWithMurmur3:gc.alloc.rate           thrpt    5   1010,274 ±   7,782  MB/sec
+HashingMurmurBenchmark.hashWithMurmur3:gc.alloc.rate.norm      thrpt    5    120,000 ±   0,001    B/op
+HashingMurmurBenchmark.hashWithMurmur3:gc.count                thrpt    5    117,000            counts
+HashingMurmurBenchmark.hashWithMurmur3:gc.time                 thrpt    5    110,000                ms
+HashingMurmurBenchmark.hashWithSangupta                        thrpt    5  22689,872 ± 332,826  ops/ms
+HashingMurmurBenchmark.hashWithSangupta:gc.alloc.rate          thrpt    5    998,911 ±   1,825  MB/sec
+HashingMurmurBenchmark.hashWithSangupta:gc.alloc.rate.norm     thrpt    5    120,000 ±   0,001    B/op
+HashingMurmurBenchmark.hashWithSangupta:gc.count               thrpt    5    115,000            counts
+HashingMurmurBenchmark.hashWithSangupta:gc.time                thrpt    5    102,000                ms
+HashingMurmurBenchmark.longHashWithMurmur2                     thrpt    5  24010,244 ± 544,417  ops/ms
+HashingMurmurBenchmark.longHashWithMurmur2:gc.alloc.rate       thrpt    5   1012,830 ±   7,806  MB/sec
+HashingMurmurBenchmark.longHashWithMurmur2:gc.alloc.rate.norm  thrpt    5    120,000 ±   0,001    B/op
+HashingMurmurBenchmark.longHashWithMurmur2:gc.count            thrpt    5    117,000            counts
+HashingMurmurBenchmark.longHashWithMurmur2:gc.time             thrpt    5     94,000                ms
+HashingMurmurBenchmark.longHashWithMurmur3                     thrpt    5  23483,994 ± 493,489  ops/ms
+HashingMurmurBenchmark.longHashWithMurmur3:gc.alloc.rate       thrpt    5   1004,258 ±   8,787  MB/sec
+HashingMurmurBenchmark.longHashWithMurmur3:gc.alloc.rate.norm  thrpt    5    120,000 ±   0,001    B/op
+HashingMurmurBenchmark.longHashWithMurmur3:gc.count            thrpt    5    117,000            counts
+HashingMurmurBenchmark.longHashWithMurmur3:gc.time             thrpt    5    102,000                ms
